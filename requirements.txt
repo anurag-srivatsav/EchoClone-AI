@@ -1,4 +1,5 @@
-streamlit
-google-generativeai
-pyht.client
-pyht
+pip install streamlit
+pip install google-generativeai
+pip install pyht.client
+pip install pyht
+pip install pyht
