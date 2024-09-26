@@ -31,16 +31,14 @@ st.title("EchoClone AI: Chatbot with Your Unique Voice")
 
 
 # Add a sidebar
-st.sidebar.header("About the AI VoiceAssist 🤖🎧:")
+st.sidebar.header("About the AI VoiceAssist 🤖")
 
 
 st.sidebar.markdown("""
-This AI-powered chatbot utilizes Google's Generative AI  
-and custom TTS to deliver intelligent responses  
-with natural-sounding voice output.
+This AI-powered chatbot utilizes Google's Generative AI and custom TTS to deliver intelligent responses with natural-sounding voice output.
 """)
 
-st.sidebar.image("https://res.cloudinary.com/dvlgixtg8/image/upload/v1727274196/voiceassistbot.png", caption="EchoClone AI", use_column_width=True)  # Update with your image path
+st.sidebar.image("https://rampd.co/wp-content/uploads/2023/09/image-15-1024x1000.png", caption="EchoClone AI", use_column_width=True)  # Update with your image path
 
 # Initialize chat history in session state
 if 'chat_history' not in st.session_state:
