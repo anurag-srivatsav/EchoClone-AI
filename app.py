@@ -71,9 +71,9 @@ st.markdown(
     <style>
     .styled-text {
         font-size: 18px; /* Change font size */
-        color: #4CAF50; /* Change text color */
+        color: skyblue; /* Change text color */
         font-weight: bold; /* Make the text bold */
-        text-align: center; /* Center the text */
+        
         margin-bottom: 20px; /* Add space below */
     }
     </style>
