@@ -27,7 +27,7 @@ model = genai.GenerativeModel(
 )
 
 # Streamlit app
-st.title("EchoClone AI: Chatbot with Your Unique Voice")
+st.title("EchoClone AI: Experience My Unique Voice Assistant")
 
 
 # Add a sidebar
@@ -84,7 +84,7 @@ st.markdown(
 # Use markdown to display the styled text in the sidebar
 st.sidebar.markdown('<p class="styled-text">Wanna explore my personal portfolio bot? Check it out now!</p>', unsafe_allow_html=True)
 # Adding a button to redirect to another URL
-if st.sidebar.button('Personal portfolio Bot🤖'):
+if st.sidebar.button('portfolioAssist🤖'):
     st.sidebar.markdown(f'You are being redirected to: [{url}]({url})', unsafe_allow_html=True)
     # Redirect using Streamlit's write function with HTML link and target="_blank"
     st.sidebar.write(f'<meta http-equiv="refresh" content="0;URL={url}" target="_blank">', unsafe_allow_html=True)
