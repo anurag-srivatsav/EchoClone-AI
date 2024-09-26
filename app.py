@@ -102,7 +102,7 @@ if 'chat_history' not in st.session_state:
 # Display chat history
 for user_msg, bot_msg in st.session_state.chat_history:
     st.markdown(f"**You:** {user_msg}")
-    st.markdown(f"**AI:** {bot_msg}")
+    st.markdown(f"**Nani:** {bot_msg}")
     # if output_file:
     #     st.audio(output_file)
 
