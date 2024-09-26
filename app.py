@@ -38,7 +38,6 @@ st.sidebar.markdown("""
 This AI-powered chatbot utilizes Google's Generative AI and custom TTS to deliver intelligent responses with natural-sounding voice output.
 """)
 
-st.sidebar.image("https://rampd.co/wp-content/uploads/2023/09/image-15-1024x1000.png", caption="EchoClone AI", use_column_width=True)
 
 st.markdown(
     """
@@ -58,6 +57,17 @@ st.sidebar.markdown(
     '<img src="https://rampd.co/wp-content/uploads/2023/09/image-15-1024x1000.png" class="styled-image" alt="EchoClone AI">',
     unsafe_allow_html=True
 )# Update with your image path
+
+st.sidebar.markdown("""EchoClone AI 
+                     created by -Anurag Srivastav""")
+
+url = 'https://anuragsportfolioassist.streamlit.app/'  # Replace with your desired URL
+
+# Adding a button to redirect to another URL
+if st.sidebar.button('Wanna explore my personal portofolio bot check out now'):
+    st.sidebar.markdown(f'You are being redirected to: [{url}]({url})', unsafe_allow_html=True)
+    # Redirect using Streamlit's write function with HTML link and target="_blank"
+    st.sidebar.write(f'<meta http-equiv="refresh" content="0;URL={url}" target="_blank">', unsafe_allow_html=True)
 
 # Initialize chat history in session state
 if 'chat_history' not in st.session_state:
