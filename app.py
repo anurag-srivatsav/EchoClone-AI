@@ -14,12 +14,18 @@ configure(api_key=api_key)
 
 # Create the model
 generation_config = {
-    "temperature": 1,
+    "temperature": 0.5,
     "top_p": 0.95,
     "top_k": 64,
-    "max_output_tokens": 30,
-    "response_mime_type": "text/plain",
+    "max_output_tokens": 60,
+    "response_mime_type": "text/plain"
 }
+def get_one_line_response(prompt):
+    # Add the instruction for a one-line answer directly in the prompt
+    full_prompt = f"{prompt} Please provide a concise one-line answer."
+    response = model.generate(full_prompt)
+    return response.text.strip()  # Using .strip() to remove any leading/trailing whitespace
+
 
 model = genai.GenerativeModel(
     model_name="gemini-1.5-flash",
@@ -31,12 +37,12 @@ st.title("EchoClone AI: Experience My Unique Voice Assistant")
 
 
 # Add a sidebar
-st.sidebar.header("About the AI VoiceAssist 🤖")
+st.sidebar.header("About the AI VoiceAssist 🎧")
 
 # Display the image with the custom style
 
 st.sidebar.markdown("""
-This AI-powered chatbot utilizes Google's Generative AI and custom TTS to deliver intelligent responses with natural-sounding voice output.
+This AI-driven chatbot harnesses Google’s Generative AI and custom text-to-speech technology to deliver intelligent responses in my unique voice, ensuring a natural and engaging interaction.
 """)
 
 
