@@ -33,7 +33,11 @@ st.title("EchoClone AI: Experience My Unique Voice Assistant")
 # Add a sidebar
 st.sidebar.header("About the AI VoiceAssist 🤖")
 
-
+# Display the image with the custom style
+st.sidebar.markdown(
+    '<img src="https://rampd.co/wp-content/uploads/2023/09/image-15-1024x1000.png" class="styled-image" alt="EchoClone AI">',
+    unsafe_allow_html=True
+)# Update with your image path
 st.sidebar.markdown("""
 This AI-powered chatbot utilizes Google's Generative AI and custom TTS to deliver intelligent responses with natural-sounding voice output.
 """)
@@ -52,11 +56,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Display the image with the custom style
-st.sidebar.markdown(
-    '<img src="https://rampd.co/wp-content/uploads/2023/09/image-15-1024x1000.png" class="styled-image" alt="EchoClone AI">',
-    unsafe_allow_html=True
-)# Update with your image path
+
 
 # Add some line breaks for spacing
 st.sidebar.markdown("<br><br>", unsafe_allow_html=True)
