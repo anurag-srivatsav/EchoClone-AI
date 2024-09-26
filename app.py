@@ -158,7 +158,7 @@ st.markdown("""
 <hr style="border-top: 3px solid #bbb;">
 <div style="text-align:center;">
     <p>&copy; 2024 Anurag Srivatsav. All rights reserved.</p>
-    <p>Developed with ❤️ using Streamlit</p>
+    <pEchoClone AI></p>
     <p>Connect with me on LinkedIn: <a href="https://linkedin.com/in/anuragsrivatsav" target="_blank">Anurag Srivatsav</a></p>
 </div>
 """, unsafe_allow_html=True)
