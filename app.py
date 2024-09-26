@@ -58,13 +58,33 @@ st.sidebar.markdown(
     unsafe_allow_html=True
 )# Update with your image path
 
-st.sidebar.markdown("""EchoClone AI 
-                     created by -Anurag Srivastav""")
+# Add some line breaks for spacing
+st.sidebar.markdown("<br><br>", unsafe_allow_html=True)
+
+# Display the text below the image
+st.sidebar.markdown("**EchoClone AI**<br>created by - Anurag Srivastav", unsafe_allow_html=True)
 
 url = 'https://anuragsportfolioassist.streamlit.app/'  # Replace with your desired URL
 
+st.markdown(
+    """
+    <style>
+    .styled-text {
+        font-size: 18px; /* Change font size */
+        color: #4CAF50; /* Change text color */
+        font-weight: bold; /* Make the text bold */
+        text-align: center; /* Center the text */
+        margin-bottom: 20px; /* Add space below */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Use markdown to display the styled text in the sidebar
+st.sidebar.markdown('<p class="styled-text">Wanna explore my personal portfolio bot? Check it out now!</p>', unsafe_allow_html=True)
 # Adding a button to redirect to another URL
-if st.sidebar.button('Wanna explore my personal portofolio bot check out now'):
+if st.sidebar.button('Personal portfolio Bot🤖'):
     st.sidebar.markdown(f'You are being redirected to: [{url}]({url})', unsafe_allow_html=True)
     # Redirect using Streamlit's write function with HTML link and target="_blank"
     st.sidebar.write(f'<meta http-equiv="refresh" content="0;URL={url}" target="_blank">', unsafe_allow_html=True)
