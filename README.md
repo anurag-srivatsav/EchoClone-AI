@@ -1,12 +1,12 @@
-Here's a sample README file for your **EchoClone AI** project following the format you've provided:
 
----
 
 # EchoClone AI
 
 EchoClone AI is an intelligent voice assistant built with Streamlit, Google Generative AI, and custom text-to-speech (TTS) technology. It delivers real-time, interactive responses in a unique voice, creating an immersive conversational experience.
 
-![EchoClone AI Screenshot](https://rampd.co/wp-content/uploads/2023/09/image-15-1024x1000.png)
+<img src="https://rampd.co/wp-content/uploads/2023/09/image-15-1024x1000.png" alt="EchoClone AI Screenshot" width="300" height="300">
+
+![LiveDemo](https://echoclone-ai.streamlit.app/)
 
 ## Features
 
@@ -57,7 +57,7 @@ Once the application is running, a Streamlit server will provide a local URL (e.
   
 ## Example Interaction
 
-![Example Interaction](https://rampd.co/wp-content/uploads/2023/09/image-15-1024x1000.png)
+![Example Interaction](https://res.cloudinary.com/dvlgixtg8/image/upload/v1727680282/echocloneai.jpg)
 
 ## Contributing
 
