@@ -6,7 +6,7 @@ EchoClone AI is an intelligent voice assistant built with Streamlit, Google Gene
 
 <img src="https://rampd.co/wp-content/uploads/2023/09/image-15-1024x1000.png" alt="EchoClone AI Screenshot" width="300" height="300">
 
-![LiveDemo](https://echoclone-ai.streamlit.app/)
+[LiveDemo](https://echoclone-ai.streamlit.app/)
 
 ## Features
 
