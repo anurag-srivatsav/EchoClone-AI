@@ -112,7 +112,7 @@ input_query = st.text_input("Enter your query:", "")
 if st.button("Submit"):
     if input_query:
         # Show loading spinner
-        with st.spinner("Nani is preparing your voice response..."):
+        with st.spinner("Nani is crafting your personalized voice response......."):
        
           
             # Start chat session and get response
