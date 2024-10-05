@@ -112,7 +112,13 @@ input_query = st.text_input("Enter your query:", "")
 if st.button("Submit"):
     if input_query:
         # Show loading spinner
-        with st.spinner("Generating response..."):
+        # with st.spinner("Generating response..."):
+        with st.spinner("Nani is preparing your voice response..."):
+            time.sleep(2)  # Simulating the time taken for preparation
+
+# After 2 seconds, update the spinner message
+        with st.spinner("Voice response ready! Playing..."):
+            time.sleep(2)  # Simulating the time it takes to play the voice response
             # Start chat session and get response
             chat_session = model.start_chat(history=[])
             response = chat_session.send_message(input_query)
