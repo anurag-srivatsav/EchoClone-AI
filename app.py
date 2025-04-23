@@ -6,7 +6,7 @@ from pyht import Client
 from pyht.client import TTSOptions
 
 # Set your API key as an environment variable
-os.environ['GENAI_API_KEY'] = 'AIzaSyDzeATPLWRenJGapH8wOCtKEs_QFf6FPR0'  # Replace with your actual API key
+os.environ['GENAI_API_KEY'] = '###'  # Replace with your actual API key
 
 # Configure the SDK with the API key
 api_key = os.getenv('GENAI_API_KEY')
@@ -90,6 +90,8 @@ st.markdown(
 # Use markdown to display the styled text in the sidebar
 st.sidebar.markdown('<p class="styled-text">Wanna explore my personal portfolio bot? Check it out now!</p>', unsafe_allow_html=True)
 # Adding a button to redirect to another URL
+#AIzaSyDzeATPLWRen
+
 if st.sidebar.button('portfolioAssist🤖'):
     st.sidebar.markdown(f'You are being redirected to: [{url}]({url})', unsafe_allow_html=True)
     # Redirect using Streamlit's write function with HTML link and target="_blank"
@@ -108,7 +110,7 @@ for user_msg, bot_msg in st.session_state.chat_history:
 
 # User input
 input_query = st.text_input("Enter your query:", "")
-
+#JGapH8wOCtKEs_QFf6FPR0
 if st.button("Submit"):
     if input_query:
         # Show loading spinner
